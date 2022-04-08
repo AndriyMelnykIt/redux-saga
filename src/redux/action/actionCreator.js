@@ -1,9 +1,16 @@
-import { INCREMENT_COUNT, DECREMENT_COUNT } from '../constatns';
+import { GET_NEWS, SET_LATEST_NEWS, SET_POPULAR_NEWS } from '../constatns';
 
-export const increment = () => ({
-  type: INCREMENT_COUNT
-})
 
-export const decrement = () => ({
-  type: DECREMENT_COUNT
-})
+export const setLatestNews = (payload) => ({
+  type: SET_LATEST_NEWS,
+  payload,
+});
+
+export const setPopularNews = (payload) => ({
+  type: SET_POPULAR_NEWS,
+  payload,
+});
+
+export const getNews = () => ({
+  type: GET_NEWS,
+});
